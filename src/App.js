@@ -1,24 +1,34 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Achievements from './Components/Achievements';
+import AchieversWorkWithSection from './Components/AchieversWorkWithSection';
+import Avengers from './Components/Avengers';
+import Courses from './Components/Courses';
+import Footer from './Components/Footer';
+import HackathonCompanies from './Components/HackathonCompanies';
+import HallOfFame from './Components/HallOfFame';
+import Institutions from './Components/Institutions';
+import Landing from './Components/Landing';
+import Products from './Components/Products';
+import ThemeContext from './Context/ThemeContext'
 
 function App() {
+  const themeHook = useState('light')
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeContext.Provider value={themeHook}>
+      <div className="App">
+        <Landing />
+        <Achievements />
+        <AchieversWorkWithSection />
+        <HallOfFame />
+        <Courses />
+        <HackathonCompanies />
+        <Products />
+        <Avengers />
+        <Institutions />
+        <Footer />
+      </div>
+    </ThemeContext.Provider>
   );
 }
 
