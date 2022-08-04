@@ -113,6 +113,35 @@ const Landing = () => {
                         <p className="text__para">Our 24 hour offline coding events such as Hack-a-thons, Job-a-thons and Course-a-thons give participants an opportunity to exhibit their skills and receive prizes for completing courses, or get recruited for their skillset.</p>
                     </div>
                 </div>
+                <div className="mySlides fade" >
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/NCZwoMcgk50" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; 
+                                autoplay; 
+                                clipboard-write; 
+                                encrypted-media; 
+                                gyroscope; 
+                                picture-in-picture" 
+                        allowfullscreen
+                        style={{height: '70%'}}
+                    ></iframe>
+                    <div className="text" style={{
+                            bottom: '40px'
+                        }}>
+                        <h1 className="text__title">Put Your Impact, Write More Code</h1>
+                        <p className="text__para" style={{
+                            fontSize: "18px"
+                        }}>
+                            Write more code,
+                            Build more stuff,
+                            I WRITE CODE
+                        </p>
+                    </div>
+                </div>
             </Carousel>
         </div>
     </div>
